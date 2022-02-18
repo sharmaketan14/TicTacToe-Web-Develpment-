@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/WebDevelopmentUdemy/FrontEnd/TicTacToe/CSS/TicTacToe.css">
+    <link rel="stylesheet" href="/WebDevelopmentUdemy/FrontEnd/TicTacToe/CSS/overlay.css">
+    <link rel="stylesheet" href="/WebDevelopmentUdemy/FrontEnd/TicTacToe/CSS/configuration.css">
+    <script src="/WebDevelopmentUdemy/FrontEnd/TicTacToe/JS/TicTacToe.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div id="backdrop"></div>
+    <header id="main-header">
+        <h1>Play Tic, Tac, Toe</h1>
+        <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+    </header>
+    <main>
+        <aside class="modal" id="config-overlay">
+            <h2>Choose your name</h2>
+            <form>
+                <div class="form-control">
+                    <label for="playername">Player Name</label>
+                    <input type="text" name="playername" id="playername">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-alt" id="cancel">Cancel</button>
+                    <button type="button" class="btn" id="confirm">Confirm</button>
+                </div>
+            </form>
+        </aside>
+        <aside id = "sides">
+            <h2>Who will go first?</h2>
+            <span id = "first-play">O</span>
+            <div id = "decide-div">
+                <button id = "close" class="btn btn-alt">Close</button>
+                <button id="decide" class="btn">Decide</button>
+            </div>
+        </aside>
+        <section id="game-configuration">
+            <ol>
+                <li>
+                    <article>
+                        <h2>Player 1</h2>
+                        <h3 id="wgb1">PLAYER NAME</h3>
+                        <p class="player-symbol"><span>X</span></p>
+                        <button type="button" class="btn-alt" id="forp1">Edit</button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Player 2</h2>
+                        <h3 id="wgb2">PLAYER NAME</h3>
+                        <p class="player-symbol">0</p>
+                        <button type="button" class="btn-alt" id="forp2">Edit</button>
+                    </article>
+                </li>
+            </ol>
+            <button class="btn" id="start">Start New Game</button>
+        </section>
+        <section id="active-game">
+            <article id="win_modal">
+                <h3>You won! <span id="wnner-name">PLAYER NAME</span></h3>
+                <button class="btn" id="start2">Start New Game</button>
+            </article>
+            <div id="gridover">
+                <ul>
+                    <li><button id="1" class="input-turn">X</button></li>
+                    <li><button id="2" class="input-turn">X</button></li>
+                    <li><button id="3" class="input-turn">X</button></li>
+
+                    <li><button id="4" class="input-turn">X</button></li>
+                    <li><button id="5" class="input-turn">X</button></li>
+                    <li><button id="6" class="input-turn">X</button></li>
+
+                    <li><button id="7" class="input-turn">X</button></li>
+                    <li><button id="8" class="input-turn">X</button></li>
+                    <li><button id="9" class="input-turn">X</button></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
