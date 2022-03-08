@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+#main-header{
+    background-color: rgb(140,0,255);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+#main-div{
+    display: block;
+    text-align: center;
+}
+
+#score-list{
+    list-style: none;
+    text-align: center;
+}
+
+#score-list div{
+    margin: 40px 32%;
+}
+
+.score-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(140,0,255);
+    border-radius: 8px;
+}
+
+.score-show{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+

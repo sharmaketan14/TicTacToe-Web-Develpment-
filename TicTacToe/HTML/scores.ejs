@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('header/head') %>
+
+    <body>
+        <header id="main-header">
+            <h1>Play Tic, Tac, Toe</h1>
+            <p>Your Scores</p>
+        </header>
+        <main>
+            <div id="main-div">
+                <ul id="score-list">
+                    <% if (len === 0) { %>
+                        <h2>Sorry! No Data Found....</h2>
+                    <% } else { %>
+
+                    <% for (const name of names) { %>
+                    <li>
+                        <div>
+                            <article class="score-card">
+                                <h2><%= name.name1 %></h2>
+                                <h2><%= name.name2 %></h2>
+                            </article>
+                            <article class="score-show">
+                                <h2>Winner: <%= name.score %></h2>
+                            </article>
+                        </div>
+                    </li>
+                    <%}%>
+                    <%}%>
+                </ul>
+            </div>
+        </main>
+    </body>
+
+</html>
